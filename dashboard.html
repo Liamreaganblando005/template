@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-box">
+            <h2>Water Monitoring Dashboard</h2>
+
+            <!-- Water Level Section -->
+            <div class="water-level-container">
+                <h3>Current Water Level:</h3>
+                
+                <!-- Water Level Display (Progress Bar + Circular Indicator) -->
+                <div class="water-level-circle-container">
+                    <svg class="circle-chart" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="circle-background" cx="60" cy="60" r="50"></circle>
+                        <circle class="circle-foreground" cx="60" cy="60" r="50"></circle>
+                    </svg>
+                    <div class="water-level-text">
+                        <span id="water-level-value">50%</span>
+                        <p id="status-text">Medium</p>
+                    </div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+            </div>
+
+            <!-- Location Section -->
+            <div class="location-container">
+                <h3>Location:</h3>
+                <div class="location-box">
+                    <p>Industrial Valley Complex</p>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <button id="monitor-again" onclick="updateWaterLevel()" class="btn">Monitor Again</button>
+            <button id="logout-btn" onclick="logout()" class="btn logout">Log Out</button>
+
+            <!-- Warning -->
+            <div id="warning"></div>
+
+            <!-- View Past Data -->
+            <button id="view-past-data" onclick="goToPastDataPage()" class="btn">View Past Water Levels</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+            
+
+
+
+
+
+
